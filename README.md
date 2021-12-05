@@ -20,11 +20,18 @@ The repo contains the following files.
 | variables.tf  | This file contains all the variables used to populate the information in the main.tf and private_link.tf files |
 | README.md | This file dictates how to use this repo to deploy the code to your respective Azure tenancies |
 
-### 1. Clone the repo
+### Pre-Requisites
+
+- Two Azure subscriptions to hold producer and consumer resources respectively.
+- An Azure Service Principal with a generated and valid Client Secret.
+- Git client for Windows or MAC.
+- Terraform v1.0 or above for Windows or MAC.
+
+### 2. Clone the repo
 
 Run the `git clone <repo url>` command to clone the repo locally.
 
-### 2. Create a local tfvars file
+### 3. Create a local tfvars file
 
 Create a `terraform.tfvars` file in your local repo, in the below format.
 
@@ -45,22 +52,22 @@ Replace the "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX" values with the relevant info
 
 Replace the `username` and `password` values with a vlue of your choosing.
 
-### 3. Initialize the Terraform Code
+### 4. Initialize the Terraform Code
 
 Run `terraform init` to initialise the code and download the required providers.
 
-### 4. Authenticate to the Azure portal
+### 5. Authenticate to the Azure portal
 
 Run the `az login` command to authenticate to your Azure consumer tenancy.
 
-### 5. Create a deployment plan
+### 6. Create a deployment plan
 
 Run `terraform plan` to ensure the code is validated and the correct components are listed in the items to be created.
 
-### 6. Deploy the resources to Azure
+### 7. Deploy the resources to Azure
 
 Run `terraform apply` to deploy the resources to your Azure tenancy. You can suffix the `--auto-approve` flag to the apply command to avoid the confirmation message.
 
-## 7. Clean up
+## 8. Clean up
 
 run the `terraform destroy` command to delete all the created resources once you are done testing the required functionality.
