@@ -41,6 +41,8 @@ plink_sub_ten_id = "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX"
 
 Replace the "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX" values with the relevant information based on your `Producer subscription`.
 
+Replace the `username` and `password` values with a vlue of your choosing.
+
 ### 3. Initialize the Terraform Code
 
 Run `terraform init` to initialise the code and download the required providers.
