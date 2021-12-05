@@ -8,13 +8,13 @@ The repo contains the following files.
 
 | File Name | Purpose |
 | ----------- | ----------- |
-| .gitignore  |   |
-| backend.tf  |   |
-| provider.tf  |   |
-| private_link.tf  |   |
-| main.tf  |   |
-| variables.tf  |   |
-| README.md | |
+| .gitignore  | The contents in this file are not committed to this repository |
+| backend.tf  | This file contains the Terraform and state config |
+| provider.tf  | This file contains the Azure Terraform provider, versioning and any additional provider specific features  |
+| private_link.tf  | This file contains the Producer subscription components that will be deployed |
+| main.tf  | This file contains all the Consumer subscription components that will be deployed |
+| variables.tf  | This file contains all the variables used to populate the information in the main.tf and private_link.tf files |
+| README.md | This file dictates how to use this repo to deploy the code to your respective Azure tenancies |
 
 ### 1. Clone the repo
 
