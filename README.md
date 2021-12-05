@@ -25,18 +25,22 @@ plink_sub_ten_id = "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX"
 
 Replace the "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX" values with the relevant information based on your `Producer subscription`.
 
-### 3. Initialise the Terraform Code
+### 3. Initialize the Terraform Code
 
 Run `terraform init` to initialise the code and download the required providers.
 
-### 4. Initialise the Terraform Code
+### 4. Authenticate to the Azure portal
 
 Run the `az login` command to authenticate to your Azure consumer tenancy.
 
-### 5. Initialise the Terraform Code
+### 5. Create a deployment plan
 
 Run `terraform plan` to ensure the code is validated and the correct components are listed in the items to be created.
 
-### 6. Initialise the Terraform Code
+### 6. Deploy the resources to Azure
 
 Run `terraform apply` to deploy the resources to your Azure tenancy. You can suffix the `--auto-approve` flag to the apply command to avoid the confirmation message.
+
+## 7. Clean up
+
+run the `terraform destroy` command to delete all the created resources once you are done testing the required functionality.
