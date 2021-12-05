@@ -2,7 +2,7 @@
 
 This repo contains the components required to test the Azure Private Endpoint and Private Link functionality outlined in the This site was built using [Blog article](https://namitjagtiani.com/2020/02/14/azure-private-link-udr-support-public-preview/).
 
-```
+```hcl
 resource "azurerm_monitor_diagnostic_setting" "azfw-diag" {
   name                       = "azfwdiag"
   target_resource_id         = azurerm_firewall.azfw.id
@@ -28,4 +28,4 @@ resource "azurerm_monitor_diagnostic_setting" "azfw-diag" {
     category = "AllMetrics"
   }
 }
-```hcl
+```
