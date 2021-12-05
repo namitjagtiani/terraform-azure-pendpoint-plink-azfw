@@ -4,6 +4,18 @@ This repo contains the components required to test the Azure Private Endpoint an
 
 ## How to use this repo to deploy the code
 
+The repo contains the following files.
+
+| File Name | Purpose |
+| ----------- | ----------- |
+| .gitignore  |   |
+| backend.tf  |   |
+| provider.tf  |   |
+| private_link.tf  |   |
+| main.tf  |   |
+| variables.tf  |   |
+| README.md | |
+
 ### 1. Clone the repo
 
 Run the `git clone <repo url>` command to clone the repo locally.
