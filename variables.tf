@@ -71,31 +71,31 @@ variable "vnetlist" {
 }
 
 variable "username" {
-  description = "value"
+  description = "Virtual Machine Login Username"
 }
 
 variable "password" {
-  description = "value"
+  description = "Virtual Machine Login Password"
 }
 
 variable "plink_sub_cl_id" {
-  description = "value"
+  description = "Producer Subscription Client ID"
 }
 
 variable "plink_sub_cl_sec" {
-  description = "value"
+  description = "Producer Subscription Client Secret"
 }
 
 variable "plink_sub_sub_id" {
-  description = "value"
+  description = "Producer Subscription ID"
 }
 
 variable "plink_sub_ten_id" {
-  description = "value"
+  description = "Producer Subscription Tenant ID"
 }
 
 variable "pendpoint_sub_id" {
-  description = "value"
+  description = "Consumer Subscription ID"
 }
 
 
