@@ -386,7 +386,7 @@ resource "azurerm_resource_group_template_deployment" "temp" {
     virtualNetworkId            = { value = azurerm_virtual_network.vnets["plink"].id }
     virtualNetworkResourceGroup = { value = azurerm_resource_group.pe-rg.name }
     subnetDeploymentName        = { value = "testdeploy" }
-    Id                          = { value = "/subscriptions/<replace with your subscription id>/resourceGroups/pendpoint-rg/providers/Microsoft.Network/virtualNetworks/plink-vnet/subnets/plink-subnet" }
+    Id                          = { value = "/subscriptions/${var.pendpoint_sub_id}/resourceGroups/pendpoint-rg/providers/Microsoft.Network/virtualNetworks/plink-vnet/subnets/plink-subnet" }
   })
   depends_on = [
     azurerm_subnet.subnets

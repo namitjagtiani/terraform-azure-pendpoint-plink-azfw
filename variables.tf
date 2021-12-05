@@ -94,3 +94,8 @@ variable "plink_sub_ten_id" {
   description = "value"
 }
 
+variable "pendpoint_sub_id" {
+  description = "value"
+}
+
+
