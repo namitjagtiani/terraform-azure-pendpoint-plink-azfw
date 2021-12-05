@@ -3,8 +3,6 @@
 #---------------------------------------
 
 # Create a resource group.
-# Ensure that this is created in one of the supported regions for the public preview of the 
-# feature or you won't be able to use the feature.
 resource "azurerm_resource_group" "pe-rg" {
   name     = "pendpoint-rg"
   location = "eastus"
@@ -30,8 +28,8 @@ resource "azurerm_subnet" "subnets" {
   resource_group_name                            = azurerm_resource_group.pe-rg.name
   virtual_network_name                           = each.value.vname
   address_prefixes                               = each.value.sprefixes
-  enforce_private_link_endpoint_network_policies = each.value == "plink" ? true : false # This is required to use the UDR and NSG functionality
-  enforce_private_link_service_network_policies  = each.value == "plink" ? true : false # This is required to use the UDR and NSG functionality
+  enforce_private_link_endpoint_network_policies = each.value == "plink" ? true : false
+  enforce_private_link_service_network_policies  = each.value == "plink" ? true : false
   depends_on = [
     azurerm_virtual_network.vnets
   ]
