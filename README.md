@@ -26,7 +26,7 @@ Run the `git clone <repo url>` command to clone the repo locally.
 
 ### 2. Create a local tfvars file
 
-Create a local `terraform.tfvars` file within this repo, in the below format.
+Create a `terraform.tfvars` file in your local repo, in the below format.
 
 ```hcl
 username = "adminuser"
