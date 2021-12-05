@@ -28,6 +28,9 @@
         },
         "subnetDeploymentName": {
             "type": "string"
+        },
+        "producerSubId": {
+            "type": "string"
         }
     },
     "resources": [
@@ -69,7 +72,7 @@
                     "resources": [
                         {
                             "name": "plink-vnet/plink-subnet",
-                            "id": "[parameters('Id')]",
+                            "id": "[parameters('producerSubId')]",
                             "properties": {
                                 "provisioningState": "Succeeded",
                                 "addressPrefix": "10.3.0.0/24",
