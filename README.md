@@ -37,9 +37,11 @@ plink_sub_sub_id = "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX"
 plink_sub_cl_id  = "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX"
 plink_sub_cl_sec = "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX"
 plink_sub_ten_id = "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX"
+pendpoint_sub_id = "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX"
+
 ```
 
-Replace the "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX" values with the relevant information based on your `Producer subscription`.
+Replace the "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX" values with the relevant information based on your `Producer and Consumer subscriptions`.
 
 Replace the `username` and `password` values with a vlue of your choosing.
 
