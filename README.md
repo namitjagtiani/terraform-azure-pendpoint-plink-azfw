@@ -20,7 +20,7 @@ The repo contains the following files.
 | variables.tf  | This file contains all the variables used to populate the information in the main.tf and private_link.tf files |
 | README.md | This file dictates how to use this repo to deploy the code to your respective Azure tenancies |
 
-### Pre-Requisites
+### 1. Pre-Requisites
 
 - Two Azure subscriptions to hold producer and consumer resources respectively.
 - An Azure Service Principal with a generated and valid Client Secret.
