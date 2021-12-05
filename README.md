@@ -28,3 +28,15 @@ Replace the "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX" values with the relevant info
 ### 3. Initialise the Terraform Code
 
 Run `terraform init` to initialise the code and download the required providers.
+
+### 4. Initialise the Terraform Code
+
+Run the `az login` command to authenticate to your Azure consumer tenancy.
+
+### 5. Initialise the Terraform Code
+
+Run `terraform plan` to ensure the code is validated and the correct components are listed in the items to be created.
+
+### 6. Initialise the Terraform Code
+
+Run `terraform apply` to deploy the resources to your Azure tenancy. You can suffix the `--auto-approve` flag to the apply command to avoid the confirmation message.
