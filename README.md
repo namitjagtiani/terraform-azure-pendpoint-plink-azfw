@@ -1,6 +1,6 @@
 # Using Azure Private Endpoints and Private Link Service with Azure Firewall
 
-This repo contains the components required to test the Azure Private Endpoint and Private Link functionality outlined in the This site was built using [Blog article](https://namitjagtiani.com/2020/02/14/azure-private-link-udr-support-public-preview/).
+This repo contains the components required to build and test the Azure Private Endpoint and Private Link functionality outlined in this blog article [Blog article](https://namitjagtiani.com/2020/02/14/azure-private-link-udr-support-public-preview/).
 
 ## Deployment diagram
 
@@ -50,7 +50,7 @@ pendpoint_sub_id = "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX"
 
 Replace the "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX" values with the relevant information based on your `Producer and Consumer subscriptions`.
 
-Replace the `username` and `password` values with a vlue of your choosing.
+Replace the `username` and `password` values with a value of your choosing.
 
 ### 4. Initialize the Terraform Code
 
